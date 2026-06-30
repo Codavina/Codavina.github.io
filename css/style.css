@@ -315,3 +315,77 @@ footer{
     color:#9ea8b5;
 
 }
+
+
+/*=============================
+Reveal Animation
+=============================*/
+
+.section{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+    transition:1s;
+
+}
+
+.section.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*=============================
+Back To Top Button
+=============================*/
+
+.top-btn{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#26e3a8;
+
+    color:#08111f;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    transform:scale(.6);
+
+    transition:.3s;
+
+}
+
+.top-btn.visible{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+.top-btn:hover{
+
+    transform:scale(1.1);
+
+}
